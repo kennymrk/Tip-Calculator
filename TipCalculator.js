@@ -33,7 +33,7 @@ const increasePeople = () => {
   // increment the amount
   numberOfPeople += 1
 
-  // update the DOM with the new number of people
+  // update the new number of people
   numberOfPeopleDiv.innerText = numberOfPeople
 
   // calculate the bill based on the new number of people
@@ -42,7 +42,6 @@ const increasePeople = () => {
 
 // ** Splits the bill between fewer people **
 const decreasePeople = () => {
-  // guard clause
   // if amount is 1 or less simply return
   // (a.k.a you can't decrease the number of people to 0 or negative!)
   if (numberOfPeople <= 1) {
@@ -52,7 +51,7 @@ const decreasePeople = () => {
   // decrement the amount
   numberOfPeople -= 1
 
-  // update the DOM with the new number of people
+  // update the new number of people
   numberOfPeopleDiv.innerText = numberOfPeople
 
   // calculate the bill based on the new number of people
